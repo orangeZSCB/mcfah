@@ -1,41 +1,39 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		<form action="" method="post">
-			用户名:<input type="text" name="" id="user" value="" />
-			密码: <input type="password" name="" id="psw" value="" />
-			<input type="button" name="" id="" value="提交" onclick="pass()"/>
-			<input type="reset" value="重置"/>
-		</form>
-		
-		<script type="text/javascript">
-			function $(id){
-				return document.getElementById("psw")
-			}
-			function pass(){
-			var password = document.getElementById("psw").value;
-				if(password.length<6){	
-					alert("输入的密码必须大于六位")
-					return;}else{
-						var count =0
-						for (var i=0;i<password.length;i++) {
-							if((password[i]>='a' && password[i]<='z')||(password[i]>='A' && password[i]<='Z')){
-								count++;
-							}
-						}
-						if(count>=2){
-							alert("输入合法")
-						}else{
-							alert("密码必须含有两位字母两位字母")
-						}
-					}
-			alert("用户名是："+(document.getElementById("user").value) + "密码是："+(document.getElementById("psw").value))
-			
-			}
-		</script>
-	</body>
-</html>
+<SCRIPT language=JavaScript> 
+ 
+function password() { 
+ 
+var testV = 1; 
+ 
+var www = prompt('请输入密码:',''); 
+ 
+while (testV < 3) { 
+ 
+if (!www) 
+ 
+history.go(-1); 
+ 
+if (www == "zsccodelnc_88576001_in_process") { 
+ 
+alert('密码正确!'); 
+ 
+break; 
+ 
+} 
+ 
+testV+=-1; 
+ 
+var www = prompt('密码错误!请重新输入:'); 
+ 
+} 
+ 
+if (www!="password" & testV ==3) 
+ 
+history.go(-1); 
+ 
+return " "; 
+ 
+} 
+ 
+document.write(password()); 
+ 
+</SCRIPT>
